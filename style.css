@@ -343,6 +343,7 @@
     display: flex;
     align-items: center;
     margin: 0.875rem 0;
+    cursor: pointer;
 }
 .headtext{
     font-family: 'Ubuntu', sans-serif;
