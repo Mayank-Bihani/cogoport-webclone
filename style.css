@@ -1,0 +1,1100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.offer{
+    display: flex;
+    /* verticle alignment */
+    align-items: center;
+    /* horizontal */
+    justify-content: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 0.875rem;
+    background-color: red;
+}
+
+.offer *{
+    margin: 0.3rem;
+}
+
+.pOffer{
+    color: white;
+}
+
+.pOfferBold{
+    font-weight: bold;
+    color: yellow;
+}
+
+.offer img{
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
+#crossImage{
+    position: Absolute; 
+    right: 3.75rem;
+}
+
+.mainContainer{
+    background-color: yellow;
+     background-image: url(images/home-banner-background-1.webp);
+    background-size: cover;
+
+    /* width: 100%; */
+}
+.background-image{
+    /* background-image: url(images/home-banner-background-1.webp); */
+    width: 100%;
+    /* height: 100%; */
+    /* background-size: 150rem; */
+    /* height: 20%; */
+    /* padding-top: 5rem; */
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navList{
+    display: flex;
+    list-style: none;
+    margin-left: 1.875rem;
+    flex-wrap: wrap;
+}
+.navListItem{
+    margin-right: 2rem;
+}
+
+.navListItem a{
+    text-decoration: none;
+    color: black;
+}
+
+.navListItem a:hover{
+    color: red;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+
+.loginSignup{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.signup{
+    padding: 0.2rem 0.5rem;
+}
+
+.container{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 90%;
+    margin: 0 10rem;
+    align-items: center;
+}
+
+.containerVideo{
+    width: 40%;
+    /* padding-top: 5rem;
+    margin-top: 2rem; */
+    margin-bottom: -1.5rem;
+    margin-right: 10rem;
+    margin-left: 7rem;
+}
+.textContainer{
+    margin-left: 1rem;
+}
+.textContainer h1{
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 1.2rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    word-spacing: 0.4rem;
+
+}
+.textContainer p{
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+}
+.textContainer h5{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+/* .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: white;
+    height: 50px;
+  }
+    
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group {
+    display: flex;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  #country-code {
+    padding: 5px;
+  }
+   */
+  /* .arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    transform: rotate(45deg);
+  } */
+  
+  #mobile-number {
+    margin-left: 10px;
+    padding: 5px;
+  }
+  
+  button[type="submit"] {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 5px;
+    text-align: center;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+.datacontainer{
+    background-color: white;
+    margin: 0 10.5rem;
+    /* margin-right: auto; */
+    padding: 1rem;
+    /* align-items: center; */
+}
+.data{
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: -2.5rem;
+    padding-top: 3.75rem;
+    /* align-items: center; */
+    align-content: space-between;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+}
+.data h2{
+    font-size: 2.5rem;
+    color: #EE3245;
+    padding: 0 1rem;
+    font-weight: 900;
+    padding-bottom: 0.25rem;
+}
+.data h4{
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+.curvebottom{  
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 18px;
+    border-bottom-right-radius: 100% 150%;
+    border-bottom-left-radius: 100% 150%;
+}
+.productsContainer{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    background-color: #fffef2;
+    flex-direction: column;
+}
+.solution{
+    display: flex;
+    align-items: center;
+    margin: 0 10.5rem;
+    padding: 1rem;
+    /* flex: 1 1; */
+}
+.solutionText{
+    flex:1 1;
+}
+.solutionText h2{
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 0.625rem;
+    font-weight: 900;
+    
+}
+.solutionText p{
+    font-size: 0.875rem;
+    font-family: 'PT Sans', sans-serif;
+}
+.solutionimgcontainer{
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-end;
+    
+}
+.solutionimg{
+    display: block;
+    width: 31.25rem;
+    object-fit: contain;
+    height: 100%;
+}
+.ourProducts{
+    margin: 0 10.5rem;
+    padding: 1rem;
+}
+.Ourprds{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+    text-align: center;
+}
+.cardcontainer{
+    display: flex;
+    align-items: center;
+    margin: 0.875rem 0;
+}
+.headtext{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 3.125rem 1.5rem 0;
+    width: 18.75rem;
+    font-weight: 900;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 11.5rem;
+    height: 10rem;
+    padding: 0.625rem 0.4375px;
+    margin: 0.625rem;
+    background: #fff;
+    border: 0.09375rem solid transparent;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.0625rem 0.375rem rgba(169,188,218,.65);
+}
+.card .icon{
+    width: 3.75rem;
+    height: 3.75rem;
+}
+.card .text{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    margin: 0.3125rem 0 1rem 0;
+    text-align: center;
+}
+.card .findmore{
+    font-size: 0.875rem;
+    font-family: 'PT Sans', sans-serif;
+    color: #EE3245;
+    margin: 0.625rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+.card .findmore p{
+    margin-right: 0.25rem ;
+}
+.card .findmore svg{
+    margin-right: 0.3125rem;
+}
+.TrustedBy{
+    margin: 1.75rem;
+}
+.TrustedBy h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.75rem;
+    color: black;
+    text-align: center;
+}
+.readycontainer{
+    
+    margin-bottom: 3.125rem;
+    background-color: #fbdc00;
+    
+}
+.readycontaineritems{
+    margin: 0 10.5rem;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.readycontaineritems .readytext{
+    padding: 1.5625rem;
+}
+.readytext h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.75rem;
+    margin-bottom: 0.625rem;
+    font-weight: 900;
+}
+.readycontaineritems button{
+    background-color: #EE3245;
+    padding: 0.25rem 1rem;
+    border: 1px solid #EE3245;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: color .1s linear,background-color .1s linear,border-color .1s linear;
+    will-change: color, background-color,border-color;
+    min-width: 6rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+}
+.Getstarted{
+    color:#ffffff;
+    font-family: 'PT sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.Getstarted svg{
+    margin-top: 0.125rem;
+    margin-left: 0.3125rem;
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+}
+.howitworkscontainer{
+    margin: 0 10.5rem;
+    padding: 1rem;
+}
+.howitworkscontaineritems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.125rem;    
+}
+.howitworkscontainer .howtext{
+    font-size: 1.75rem;
+    font-family: 'Ubuntu',sans-serif;
+    color: black;
+    margin-bottom: 1.75rem;
+    font-weight: 800;
+}
+.howitworkscontainer .workforbutton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+.howitworkscontainer .workforbutton button{
+    margin: 0 1.25rem;
+    padding: 1.25rem;
+    background-color: #fbdc00;
+    border-radius: 1.25rem;
+    width: 12.5rem;
+    height: 2.25rem;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    line-height: 1.2;
+}
+.howitworkscontainer .workforbutton #offwhite{
+    background-color: #e5dfdf;
+}
+.howitworkscontainer .workforbutton .but1{
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+
+.but2{
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+.containeritems{
+    position: relative;
+    display: flex;
+}
+.leftone{
+    font-family: 'PT Sans', sans-serif ;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+.leftone .stage1{
+    margin-bottom: 7.5rem;
+    padding: 1rem;
+    width: 18.75rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 1px 6px rgba(169,188,218,.65);
+}
+.stagetext{
+    color: #EE3245;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.icontext{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.625rem;
+    list-style-position: outside;
+    
+}
+.icontext svg{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.icontext .text{
+    padding-left: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.leftone span{
+    display: flex;
+}
+.leftone p{
+    font-size: 1rem;
+    padding: 0 0 0.3125rem 0.5rem;
+}
+.arrow1{
+    position: absolute;
+    top: 6.5rem;
+    left: 18.75rem;
+    width: 9.375rem;
+}
+.arrow1 img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    aspect-ratio: auto 150/59;
+    height: 3.6875rem;
+}
+.leftone .stage2{
+    padding: 1rem;
+    width: 18.75rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 1px 6px rgba(169,188,218,.65);
+}
+.arrow2{
+    position: absolute;
+    bottom: 7.25rem;
+    left: 18.75rem;
+    width: 9.375rem;
+}
+.arrow2 img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    aspect-ratio: auto 150 / 59;
+    height: 3.6875rem;
+}
+.midone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.midone img{
+    width: 35rem;
+    height: 20rem;
+    overflow: clip;
+    aspect-ratio: auto 560 / 320;
+    overflow-clip-margin: content-box;
+    
+}
+.rightone{
+    font-family: 'PT Sans', sans-serif ;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+.arrow3{
+    position: absolute;
+    top: 6.5rem;
+    right: 18.75rem;
+    width: 9.375rem;
+}
+.arrow3 img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    aspect-ratio: auto 150/59;
+    height: 3.6875rem;
+}
+.rightone .stage3{
+    margin-bottom: 7.5rem;
+    padding: 1rem;
+    width: 18.75rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 1px 6px rgba(169,188,218,.65);
+}
+.arrow4{
+    position: absolute;
+    bottom: 7.25rem;
+    right: 18.75rem;
+    width: 9.375rem;
+}
+.arrow4 img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    aspect-ratio: auto 150 / 59;
+    height: 3.6875rem;
+}
+.rightone span{
+    display: flex;
+}
+.rightone p{
+    font-size: 1rem;
+    padding: 0 0 0.3125rem 0.5rem;
+}
+.rightone .stage4{
+    /* margin-bottom: 7.5rem; */
+    padding: 1rem;
+    width: 18.75rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 1px 6px rgba(169,188,218,.65);
+}
+.industriesmaincontainer{
+    padding: 16px;
+    margin-bottom: 50px;
+    background: #fffef3;
+}
+.industriescontaineritems{
+    margin: 0 10.5rem;
+    padding: 1rem;
+}
+.industriesservedtext{
+    margin-bottom: 1.75rem;
+    font-size: 1.75rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.industriesservedtext h3{
+    font-size: 1.75rem;
+}
+.industriesiconscontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.industriesicons{
+    margin: 0.625rem;
+    width: 6.25rem;
+
+}
+.industriesicons img{
+    width: 6.25rem;
+    height: 6.25rem;
+}
+.industriesicontext{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #000;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+.getstartedmaincontainer{
+    margin-bottom: 3.125rem;
+}
+.getstartedcontainer{
+    margin: 0 10.5rem;
+    padding: 1rem 6.25rem;
+    display: flex;
+    align-items: center;
+    
+}
+.getstartedtext{
+    flex: 1 1;
+}
+.getstartedtext h2{
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 0.625rem;
+}
+.getstartedtext span p{
+    font-size: 1rem;
+    margin-bottom: 1em;
+    font-family: 'PT Sans', sans-serif;
+}
+.getstartedtext button{
+    background-color: #EE3245;
+    padding: 0.25rem 1rem;
+    border: 1px solid #EE3245;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: color .1s linear,background-color .1s linear,border-color .1s linear;
+    will-change: color, background-color,border-color;
+    min-width: 6rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+}
+.floatingimage{
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-end;
+}
+.floatingimage img{
+    display: block;
+    -o-object-fit: contain;
+    object-fit: contain;
+    animation-name: styles_bounce__6VcwD;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    width: 280px;
+    aspect-ratio: auto 280 / 360;
+    height: 360px;
+}
+.knowmoremaincontainer{
+    margin-bottom: 3.125rem;
+}
+.knowmoremaincontainer .videothumbnail{
+    position: relative;
+    cursor: pointer;
+    height: 28.125rem;
+    
+}
+.videothumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    aspect-ratio: auto 1232/450;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.playbtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.4);
+}
+.playbtn img{
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-bottom: 0.5rem;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    cursor: pointer;
+}
+.knowmoremaincontainer{
+    background-color: #EE3425;
+}
+.knowmoreitems{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10.5rem;
+    padding: 1rem;
+}
+.knowmoretext{
+    padding: 1.5625rem;
+}
+.knowmoretext h3{
+    font-size: 1.75rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    margin-bottom:0.625rem ;
+}
+.knowmoretext p{
+    font-size: 1rem;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.knowmoreitems button{
+    background-color: #fbdc00;
+    padding: 0.25rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    height: 2.25rem;
+    align-content: center;
+}
+.knowmore{
+    font-size: 0.875rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+.knowmore svg{
+    margin-top: 0.125rem ;
+    margin-left: 0.3125rem;
+    width: 1em;
+    height: 1em;
+}
+.blogsmaincontainer{
+    margin: 0 10.5rem;
+    padding: 1rem;
+}
+.blogsitemscontainer{
+    display: flex;
+    flex-direction: column;
+}
+.blogstext{
+    font-size: 1.75rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 1.75rem;
+    text-align: center;
+}
+.blogsposts{
+    display:flex ;
+    margin-right: -0.625rem;
+    margin-left: -0.625rem;
+    flex-wrap: wrap;
+}
+.blogcontent{
+    width: calc(calc(100% / 3) - 20px);
+    margin-right: 0.625rem;
+    margin-bottom: 2.5rem;
+    margin-left: 0.625rem;
+    overflow: hidden;
+    text-align: start;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px hsla(0,0%,79%,.5);
+}
+.blogcontent img{
+    aspect-ratio: auto 376 / 200;
+    display: block;
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.blogcontenttext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.625rem 1rem;
+    cursor: pointer;   
+    line-height: 1.5rem;
+}
+.blogtopic{
+    margin-bottom: 0.3125rem;
+    font-size: 1rem;
+    color: #EE3425;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.blogheadline{
+    margin-bottom: 0.3125rem;
+    font-size: 1.125rem;
+    font-family: 'Ubuntu',sans-serif;
+}
+.blogcontenttext p{
+    max-height: calc(1.4rem * 3);
+    overflow: hidden;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'PT Sans', sans-serif;
+}
+.readmore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.readmore span{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #EE3425;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-family: 'PT Sans',sans-serif;
+}
+.readmore svg{
+    margin-left: 0.3125rem;
+    fill: currentColor;
+    width: 20;
+    height: 20;
+}
+.readmore h4{
+    margin-bottom: 0.3125rem;
+    font-size: 0.875rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #9a9a9a
+}
+.blogsviewall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.blogsviewall button{
+    color: #fff;
+    background-color: #EE3425;
+    border: 1px solid #EE3425;
+    min-width: 4.5rem;
+    height: 2.25rem;
+    width: fit-content;
+    padding: 0.5rem 2.625rem;
+    border-radius: 0.25rem;
+    outline: none;
+
+}
+.blogsviewall span{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'PT Sans',sans-serif;
+}
+.subscribemaincontainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12.5rem;
+    margin-top: 1.25rem;
+    background-color: #fbdc00;
+}
+.subscribeillustration{
+    width: 20%;
+    padding: 1.25rem;
+    margin: 1.25rem;
+}
+.subscribeform h3{
+    font-size: 1.75rem;
+    font-family: 'Ubuntu',sans-serif;
+    color: black;
+    font-weight: 800;
+}
+.subscribeform span{
+    font-size: 1rem;
+    font-family: 'PT Sans',sans-serif;
+    color: black;
+}
+.subform{
+    margin-top: 1.25rem;
+}
+.subform form{
+    display: flex;
+}
+.subform input{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.subform button{
+    color: #fff;
+    background-color: #EE3425;
+    border: 1px solid #ee3425;
+    min-width: 4.5rem;
+    padding: 0.25rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    height: 2.5rem;
+    align-items: center;
+    font-size: 0.875rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+.subform button svg{
+    width: 30;
+    height: 18;
+    fill: currentColor
+}
+.extlinksmaincontainer{
+    background-color: #fbdc00;
+    padding: 0 3.125rem 3.125rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+.extlinksmaincontainer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+.extlinksmaincontainer .container span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.extlinksmaincontainer .container .details{
+    display: flex;
+    flex-direction: column;
+}
+.extlinksmaincontainer .container .details .type1{
+    margin: 0.5rem 0;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+}
+.extlinksmaincontainer .container .type1 span{
+    font-size: 0.875rem;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+.extlinksmaincontainer .container .details .type2{
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: left;
+    text-decoration: none;
+}
+.extlinksmaincontainer .container .details .type2 h4{
+    font-family: 'Ubuntu', sans-serif;
+    color: #000;
+    margin-bottom: 0.375rem ;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+.extlinksmaincontainer .container .details .type2 span{
+    margin-top: 0.5rem;
+    font-family: 'PT Sans',sans-serif;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.locationsmaincontainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 2.5rem 0;
+    background-color: #ebbe00;
+
+}
+.locationsmaincontainer .loccontainer{
+    display: flex;
+    flex-direction: column;
+    max-width:25rem;
+    font-size: 0.875rem;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 2rem;
+    width: fit-content;
+}
+.locationsmaincontainer .loccontainer span:hover{
+    cursor: pointer;
+    color: #ee3425;
+    text-decoration: underline;
+}
+.footermaincontainer{
+    background-color: #ebbe00;
+    padding: 0.5rem 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.footermaincontainer .footertext{
+    display: flex;
+    align-items: center;
+}
+.footertext span{
+    display: flex;
+    margin-left: 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+.footertext ul{
+    list-style-type: none;
+    display: flex;
+    padding-left: 2.5rem;
+    margin: 0.75rem 0 0.75rem 0.625rem;
+    font-size: 0.75rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+.footertext ul li{
+    margin-right: 0.3125rem;
+    cursor: pointer;
+}
+.footermaincontainer .footericons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.footericons .chooselang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chooselang .globeimg{
+    margin-right: 0.3125rem;
+}
+.globeimg img{
+    width: 1.25rem;
+    height: 1.25rem;
+    aspect-ratio: auto 20 / 20;
+}
+.chooselang .lang{
+    margin-bottom: 0.375rem;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #EE3425;
+    text-decoration: underline;
+    font-family: 'PT Sans', sans-serif;
+}
+.socialmedias{
+    display: flex;
+    padding: 0.5rem 1.875rem;
+}
+.socialmedias svg{
+    margin-right: 0.25rem;
+    color: #000;
+}
