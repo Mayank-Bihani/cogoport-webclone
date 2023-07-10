@@ -58,7 +58,7 @@
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
     display: flex;
     align-items: center;
     width: 100%;
@@ -125,7 +125,7 @@
 .container{
     display: flex;
     /* justify-content: space-between; */
-    width: 90%;
+    width: 88%;
     margin: 0 10rem;
     align-items: center;
 }
@@ -140,6 +140,7 @@
 }
 .textContainer{
     margin-left: 1rem;
+    margin-bottom: 1.5rem;
 }
 .textContainer h1{
     font-family: 'Ubuntu', sans-serif;
@@ -163,6 +164,7 @@
 .whatsappmaincontainer{
     display: flex;
     margin-top: 0.3125rem;
+    position: relative;
 }
 .whatsappcontainer{
     position: relative;
@@ -223,9 +225,9 @@
     outline: none;
 }
 .whatsappmaincontainer button{
-    position: relative;
+    position: absolute;
     top: 0.5rem;
-    right: 6.875rem;
+    right: 10px;
     width: 11.25rem;
     height: 1.5rem;
     padding: 0.125rem 0.25rem;
@@ -285,7 +287,7 @@
     width: 100%;
     height: 100px;
     background-color: #fff;
-    border-radius: 18px;
+    /* border-radius: 18px; */
     border-bottom-right-radius: 100% 150%;
     border-bottom-left-radius: 100% 150%;
 }
@@ -300,7 +302,7 @@
     display: flex;
     align-items: center;
     margin: 0 10.5rem;
-    padding: 1rem;
+    padding: 2rem 1rem;
     /* flex: 1 1; */
 }
 .solutionText{
@@ -651,7 +653,7 @@
     background: #fffef3;
 }
 .industriescontaineritems{
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 1200px;
     margin: auto;
 }
@@ -1030,7 +1032,9 @@
     width: 100%;
     margin: 0;
 }
-.extlinksmaincontainer .container span {
+.extlinksmaincontainer .container button {
+    border: none;
+    background-color: transparent;
     font-family: 'PT Sans', sans-serif;
     font-size: 1.25rem;
     margin-top: 1.25rem;
@@ -1183,9 +1187,10 @@ h3 {
     line-height: 1.2;
 }
 
-.midone-mobile{
+.midone-mobile,.videoMobile,.linkMobile{
     display: none;
 }
+
 
 
 
@@ -1230,10 +1235,11 @@ h3 {
         flex-direction: column-reverse;
         width: 100%;
         margin: 0;
-        padding: 0px 15px;
+        padding: 10px 15px;
     }
     .container{
         align-items: flex-start;
+        border-bottom:1px solid grey;
     }
 
     .Getstarted{
@@ -1266,7 +1272,7 @@ h3 {
     .subscribeform{
         text-align: center;
     }
-    .subscribeillustration,.locationsmaincontainer, .footertext,.nav,.arrow1,.arrow2,.arrow3,.arrow4{
+    .subscribeillustration,.locationsmaincontainer, .footertext,.nav,.arrow1,.arrow2,.arrow3,.arrow4,.linkDesktop{
         display: none !important;
     }
 
@@ -1365,7 +1371,32 @@ h3 {
         padding: 0px !important;
         flex-direction: column;
     }
-
+    .videoMobile{
+        display: flex;
+    }
+    .videoDesktop{
+        display: none;
+    }
+    .whatsappmaincontainer button{
+        width: auto;
+    }
+    .workforbutton {
+        display: block !important;
+    }
+    .workforbutton button{
+        margin-bottom: 15px !important;
+    }
+    .linkMobile{
+        display: block;
+    }
+    .extlinksmaincontainer .container button{
+        margin: 0 !important;
+        text-decoration: none !important;
+    }
+    .details h4{
+        color: #ee3425 !important;
+    }
+    
 }
 
 
@@ -1376,57 +1407,10 @@ h3 {
 
 /* for horizontal animation */
 
-.scroll-parent {
-    position: relative;
-    width: 100vw;
-    height: 20rem;
-    padding: 2rem 0;
-    overflow-x: hidden;
-  }
-  
-  .scroll-element {
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .primary {
-    animation: primary 20s linear infinite;
-  }
-  
-  .secondary {
-    animation: secondary 20s linear infinite;
-    margin-left: 100px;
-  }
-  
-  @keyframes primary {
-    from {
-      left: 0%;
-    }
-    to {
-      left: -100%;
-    }
-  }
-  
-  @keyframes secondary {
-    from {
-      left: 100%;
-    }
-    to {
-      left: 0%;
-    }
-  }
-
-
   logo-slider {
     overflow: hidden;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
     display: flex;
   }
@@ -1457,5 +1441,52 @@ h3 {
     }
     100% {
       transform: translateX(-100%);
+    }
+  }
+
+
+
+  
+  .productContainer .productDetails,.toolContainer .toolDetails,.partnerContainer .partnerDetails,.companyContainer .companyDetails,.knowledgeContainer .knowledgeDetails {
+    margin-top: 10px;
+    display: none !important;
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-duration: 0.35s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.35s;
+    -webkit-animation-fill-mode: both;
+  }
+ 
+  
+  .productContainer.active .productDetails,.toolContainer.active .toolDetails,.partnerContainer.active .partnerDetails,.companyContainer.active .companyDetails,.knowledgeContainer.active .knowledgeDetails {
+    display: block !important;
+    opacity: 0;
+    z-index: 10;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 30px, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInDown {
+    from {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    to {
+      transform: translate3d(0, 20px, 0);
+      opacity: 0;
     }
   }
